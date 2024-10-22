@@ -41,17 +41,17 @@ class _ShopPageState extends State<ShopPage> {
             ),
           ),
           // Hot Picks
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                const Text(
+                Text(
                   'Hot Picks 🔥',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                 ),
-                const Text(
+                Text(
                   'See all',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -61,12 +61,6 @@ class _ShopPageState extends State<ShopPage> {
               ],
             ),
           ),
-          const SizedBox(height: 10),
-          Expanded(child: ListView.builder(
-            itemBuilder: (context, index) {
-              return ShoeTile();
-            },
-          ))
         ],
       ),
     );
